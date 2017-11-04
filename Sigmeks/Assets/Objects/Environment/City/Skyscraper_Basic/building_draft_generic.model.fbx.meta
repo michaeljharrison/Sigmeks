@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: bf9aac4df28036646ba681335b392c85
+timeCreated: 1509754877
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: detail_airHuge_2
+    100004: detail_airLarge_37
+    100006: detail_airSmall_3
+    100008: detail_bricks_24
+    100010: detail_bricks_25
+    100012: roof_corner_0
+    100014: roof_corner_33
+    100016: roof_corner_34
+    100018: roof_corner_35
+    100020: roof_corner_36
+    100022: roof_factorySlant_39
+    100024: roof_square_22
+    100026: roof_square_23
+    100028: wall_cornerDiagonalWindow_20
+    100030: wall_garageDoorClosed_19
+    100032: wall_straight_1
+    100034: wall_straight_1 1
+    100036: wall_straight_4
+    100038: wall_window_10
+    100040: wall_window_11
+    100042: wall_window_12
+    100044: wall_window_13
+    100046: wall_window_14
+    100048: wall_window_15
+    100050: wall_window_16
+    100052: wall_window_17
+    100054: wall_window_26
+    100056: wall_window_27
+    100058: wall_window_28
+    100060: wall_window_29
+    100062: wall_window_30
+    100064: wall_window_31
+    100066: wall_window_32
+    100068: wall_windowFactory_3
+    100070: wall_windowLarge_0
+    100072: wall_windowLarge_4
+    100074: wall_windowLarge_44
+    100076: wall_windowLarge_5
+    100078: wall_windowLarge_6
+    100080: wall_windowLarge_7
+    100082: wall_windowLarge_8
+    100084: wall_windowLarge_9
+    100086: wall_windowStore_18
+    100088: wall_windowStore_21
+    400000: //RootNode
+    400002: detail_airHuge_2
+    400004: detail_airLarge_37
+    400006: detail_airSmall_3
+    400008: detail_bricks_24
+    400010: detail_bricks_25
+    400012: roof_corner_0
+    400014: roof_corner_33
+    400016: roof_corner_34
+    400018: roof_corner_35
+    400020: roof_corner_36
+    400022: roof_factorySlant_39
+    400024: roof_square_22
+    400026: roof_square_23
+    400028: wall_cornerDiagonalWindow_20
+    400030: wall_garageDoorClosed_19
+    400032: wall_straight_1
+    400034: wall_straight_1 1
+    400036: wall_straight_4
+    400038: wall_window_10
+    400040: wall_window_11
+    400042: wall_window_12
+    400044: wall_window_13
+    400046: wall_window_14
+    400048: wall_window_15
+    400050: wall_window_16
+    400052: wall_window_17
+    400054: wall_window_26
+    400056: wall_window_27
+    400058: wall_window_28
+    400060: wall_window_29
+    400062: wall_window_30
+    400064: wall_window_31
+    400066: wall_window_32
+    400068: wall_windowFactory_3
+    400070: wall_windowLarge_0
+    400072: wall_windowLarge_4
+    400074: wall_windowLarge_44
+    400076: wall_windowLarge_5
+    400078: wall_windowLarge_6
+    400080: wall_windowLarge_7
+    400082: wall_windowLarge_8
+    400084: wall_windowLarge_9
+    400086: wall_windowStore_18
+    400088: wall_windowStore_21
+    2300000: detail_airHuge_2
+    2300002: detail_airLarge_37
+    2300004: detail_airSmall_3
+    2300006: detail_bricks_24
+    2300008: detail_bricks_25
+    2300010: roof_corner_0
+    2300012: roof_corner_33
+    2300014: roof_corner_34
+    2300016: roof_corner_35
+    2300018: roof_corner_36
+    2300020: roof_factorySlant_39
+    2300022: roof_square_22
+    2300024: roof_square_23
+    2300026: wall_cornerDiagonalWindow_20
+    2300028: wall_garageDoorClosed_19
+    2300030: wall_straight_1
+    2300032: wall_straight_1 1
+    2300034: wall_straight_4
+    2300036: wall_window_10
+    2300038: wall_window_11
+    2300040: wall_window_12
+    2300042: wall_window_13
+    2300044: wall_window_14
+    2300046: wall_window_15
+    2300048: wall_window_16
+    2300050: wall_window_17
+    2300052: wall_window_26
+    2300054: wall_window_27
+    2300056: wall_window_28
+    2300058: wall_window_29
+    2300060: wall_window_30
+    2300062: wall_window_31
+    2300064: wall_window_32
+    2300066: wall_windowFactory_3
+    2300068: wall_windowLarge_0
+    2300070: wall_windowLarge_4
+    2300072: wall_windowLarge_44
+    2300074: wall_windowLarge_5
+    2300076: wall_windowLarge_6
+    2300078: wall_windowLarge_7
+    2300080: wall_windowLarge_8
+    2300082: wall_windowLarge_9
+    2300084: wall_windowStore_18
+    2300086: wall_windowStore_21
+    3300000: detail_airHuge_2
+    3300002: detail_airLarge_37
+    3300004: detail_airSmall_3
+    3300006: detail_bricks_24
+    3300008: detail_bricks_25
+    3300010: roof_corner_0
+    3300012: roof_corner_33
+    3300014: roof_corner_34
+    3300016: roof_corner_35
+    3300018: roof_corner_36
+    3300020: roof_factorySlant_39
+    3300022: roof_square_22
+    3300024: roof_square_23
+    3300026: wall_cornerDiagonalWindow_20
+    3300028: wall_garageDoorClosed_19
+    3300030: wall_straight_1
+    3300032: wall_straight_1 1
+    3300034: wall_straight_4
+    3300036: wall_window_10
+    3300038: wall_window_11
+    3300040: wall_window_12
+    3300042: wall_window_13
+    3300044: wall_window_14
+    3300046: wall_window_15
+    3300048: wall_window_16
+    3300050: wall_window_17
+    3300052: wall_window_26
+    3300054: wall_window_27
+    3300056: wall_window_28
+    3300058: wall_window_29
+    3300060: wall_window_30
+    3300062: wall_window_31
+    3300064: wall_window_32
+    3300066: wall_windowFactory_3
+    3300068: wall_windowLarge_0
+    3300070: wall_windowLarge_4
+    3300072: wall_windowLarge_44
+    3300074: wall_windowLarge_5
+    3300076: wall_windowLarge_6
+    3300078: wall_windowLarge_7
+    3300080: wall_windowLarge_8
+    3300082: wall_windowLarge_9
+    3300084: wall_windowStore_18
+    3300086: wall_windowStore_21
+    4300000: roof_corner_0
+    4300002: wall_straight_1
+    4300004: wall_windowFactory_3
+    4300006: wall_windowLarge_4
+    4300008: wall_windowLarge_5
+    4300010: wall_windowLarge_6
+    4300012: wall_windowLarge_7
+    4300014: wall_windowLarge_8
+    4300016: wall_windowLarge_9
+    4300018: wall_window_10
+    4300020: wall_window_11
+    4300022: wall_window_12
+    4300024: wall_window_13
+    4300026: wall_window_14
+    4300028: wall_window_15
+    4300030: wall_window_16
+    4300032: wall_window_17
+    4300034: wall_windowStore_18
+    4300036: wall_garageDoorClosed_19
+    4300038: wall_cornerDiagonalWindow_20
+    4300040: wall_windowStore_21
+    4300042: roof_square_22
+    4300044: roof_square_23
+    4300046: detail_bricks_24
+    4300048: detail_bricks_25
+    4300050: wall_window_26
+    4300052: wall_window_27
+    4300054: wall_window_28
+    4300056: wall_window_29
+    4300058: wall_window_30
+    4300060: wall_window_31
+    4300062: wall_window_32
+    4300064: roof_corner_33
+    4300066: roof_corner_34
+    4300068: roof_corner_35
+    4300070: roof_corner_36
+    4300072: detail_airLarge_37
+    4300074: roof_factorySlant_39
+    4300076: wall_windowLarge_44
+    4300078: wall_windowLarge_0
+    4300080: wall_straight_1
+    4300082: detail_airHuge_2
+    4300084: detail_airSmall_3
+    4300086: wall_straight_4
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: d14dcfda011973a44a5e712b16a3a82f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darkStone
+    second: {fileID: 2100000, guid: b8e75d29916d1e74b9cbc486c34f2172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: d2b002aba3f6b2940bde3d8a09d445be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lightStone
+    second: {fileID: 2100000, guid: dc5a5be940ad0bd4ea6803058d9585d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone
+    second: {fileID: 2100000, guid: d28e8a68da39da7498d2f15e7029f685, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
