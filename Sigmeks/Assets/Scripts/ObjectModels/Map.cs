@@ -23,7 +23,7 @@ public class Map : ScriptableObject
         // First print X axis:
         for (var counterX = 0; counterX < this.Width; counterX++)
         {
-            outputString += "   " + counterX + " ";
+            outputString += "     " + counterX + " ";
         }
         outputString += "\n";
 

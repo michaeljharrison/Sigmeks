@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Controllers\TileController.cs" />
      <Compile Include="Assets\Scripts\ObjectModels\Map.cs" />
      <Compile Include="Assets\Scripts\ObjectModels\MapTile.cs" />
+     <None Include="Assets\Resources\MapFiles\default.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -9,4 +9,10 @@ public class Enums : ScriptableObject
         MINOR,
         ALL
     }
+
+    public enum MapTileEnum
+    {
+        BLANK,
+        BUILDING
+    }
 }
