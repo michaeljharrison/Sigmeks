@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Constants\Constants.cs" />
      <Compile Include="Assets\Scripts\Constants\Enums.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameMaster.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TileController.cs" />
      <Compile Include="Assets\Scripts\ObjectModels\Map.cs" />
      <Compile Include="Assets\Scripts\ObjectModels\MapTile.cs" />
  <Reference Include="UnityEngine.UI">

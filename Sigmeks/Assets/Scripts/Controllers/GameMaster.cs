@@ -5,11 +5,12 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
 
+    private Map currentMap;
     // Use this for initialization
     void Start()
     {
-        Map newMap = FetchMap("???");
-        GenerateMap(newMap);
+        this.currentMap = FetchMap("???");
+        GenerateMap();
     }
 
     Map FetchMap(string mapName)
@@ -28,25 +29,33 @@ public class GameMaster : MonoBehaviour
         return returnMap;
     }
     // Use a map object to generate the Map into the scene.
-    void GenerateMap(Map map)
+    void GenerateMap()
     {
         if (Constants.DEBUG_LEVEL >= Enums.DebugLevelEnum.MODERATE)
         {
-            Debug.Log(map.toString());
+            Debug.Log(this.currentMap.toString());
         }
 
         // Read the map and create any needed objects.
-        for (var counterY = 0; counterY < map.Height; counterY++)
+        for (var counterY = 0; counterY < this.currentMap.Height; counterY++)
         {
-            for (var counterX = 0; counterX < map.Width; counterX++)
+            for (var counterX = 0; counterX < this.currentMap.Width; counterX++)
             {
                 if (Constants.DEBUG_LEVEL >= Enums.DebugLevelEnum.MINOR)
                 {
-                    Debug.Log("Generating Tile [" + counterX + "," + counterY + "]");
+                    Debug.Log("Generating Tile [" + counterX + "," + counterY + "] - " + this.currentMap.getTile(counterX, counterY));
                 }
                 // @TODO Actually generate Tile
+                GenerateTile(this.currentMap.getTile(counterX, counterY));
             }
         }
+
+    }
+
+    void GenerateTile(MapTile tile)
+    {
+        // Render a new prefab at the designated location based on the tile.
+        Instantiate(BlankTile)
 
     }
 
