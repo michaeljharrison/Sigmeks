@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 33997188885260860}
   - component: {fileID: 23611108318103706}
   m_Layer: 0
-  m_Name: roof_square_22
+  m_Name: tile_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -308,6 +308,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4151708259258592}
+  - component: {fileID: 65672841359356292}
   m_Layer: 0
   m_Name: BuildingTile
   m_TagString: Untagged
@@ -807,8 +808,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1525613223431368}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.509647, y: -26.954971, z: 64.79034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4651607393840468}
@@ -3072,3 +3073,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1121182287656470}
   m_Mesh: {fileID: 4300040, guid: c5f66d104ea27044386ed626985515f2, type: 3}
+--- !u!65 &65672841359356292
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525613223431368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 22.107067, y: 44.041763, z: 23.149498}
+  m_Center: {x: -0.18398094, y: 23.288609, z: -0.83164597}

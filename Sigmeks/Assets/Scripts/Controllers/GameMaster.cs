@@ -10,22 +10,27 @@ public class GameMaster : MonoBehaviour
 
     private GameObject blankTile;
     private GameObject buildingTile;
+    private GameObject[,] tileArray;
     private Map currentMap;
+    private TileLocation currentHoveredTile;
+
     // Use this for initialization
     void Start()
     {
+        this.currentHoveredTile.x = -1;
+        this.currentHoveredTile.y = -1;
         this.currentMap = FetchMap("default");
         LoadResources();
         GenerateMap();
     }
 
-    bool LoadResources()
+    private bool LoadResources()
     {
         this.blankTile = Resources.Load("Tiles/BlankTile", typeof(GameObject)) as GameObject;
         this.buildingTile = Resources.Load("Tiles/BuildingTile", typeof(GameObject)) as GameObject;
         return true;
     }
-    Map FetchMap(string mapName)
+    private Map FetchMap(string mapName)
     {
         // Read Map Layout from File.
         string fullPath = "Assets/Resources/MapFiles/" + mapName + ".txt";
@@ -57,13 +62,13 @@ public class GameMaster : MonoBehaviour
         return returnMap;
     }
     // Use a map object to generate the Map into the scene.
-    void GenerateMap()
+    private void GenerateMap()
     {
         if (Constants.DEBUG_LEVEL >= Enums.DebugLevelEnum.MODERATE)
         {
             Debug.Log(this.currentMap.toString());
         }
-
+        this.tileArray = new GameObject[this.currentMap.Width, this.currentMap.Height];
         // Read the map and create any needed objects.
         for (var counterY = 0; counterY < this.currentMap.Height; counterY++)
         {
@@ -80,7 +85,7 @@ public class GameMaster : MonoBehaviour
 
     }
 
-    void GenerateTile(MapTile tile, int x, int y)
+    private void GenerateTile(MapTile tile, int x, int y)
     {
         // Render a new prefab at the designated location based on the tile.
         // @TODO -> Determine what tile to render first.
@@ -98,23 +103,27 @@ public class GameMaster : MonoBehaviour
                 tileType = blankTile;
                 break;
         }
-        // @TODO -> Determine where to render the tile based on x and y.
         Vector3 tilePos = new Vector3(x * Constants.TILE_WIDTH, 0, y * Constants.TILE_WIDTH);
         Quaternion tileRotation = new Quaternion(0, 0, 0, 0);
 
         GameObject newTile = Instantiate(tileType, tilePos, tileRotation) as GameObject;
         newTile.name = "tile_" + x + "_" + y;
         newTile.transform.parent = this.transform;
-
+        tileArray[x, y] = newTile;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        // Re-render the currently hovered tile.
+        if (this.currentHoveredTile.x != -1 && this.currentHoveredTile.y != -1)
+        {
+            string tilePath = "GameMaster/tile_" + this.currentHoveredTile.x + "_" + this.currentHoveredTile.y + "/tile_base";
+            GameObject tileToHighlight = GameObject.Find(tilePath);
+        }
     }
 
-    Enums.MapTileEnum toTileType(string tileString)
+    private Enums.MapTileEnum toTileType(string tileString)
     {
         switch (tileString)
         {
@@ -126,5 +135,18 @@ public class GameMaster : MonoBehaviour
                 Debug.LogError("Unknown Title Type: " + tileString);
                 return Enums.MapTileEnum.BLANK;
         }
+    }
+
+    public void setCurrentTileHovered(string tileName)
+    {
+        string[] tileNameArray = tileName.Split(new[] { "_" }, StringSplitOptions.None);
+        this.currentHoveredTile.x = Int32.Parse(tileNameArray[1]);
+        this.currentHoveredTile.y = Int32.Parse(tileNameArray[2]);
+    }
+
+    private struct TileLocation
+    {
+        public int x;
+        public int y;
     }
 }
