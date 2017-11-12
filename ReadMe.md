@@ -12,10 +12,12 @@ Welcome to Sigmeks IV: The Sigmeckoning.
     - Targeting
     - Turns
 * Map
-    - Map Generation from Object
+    - ~Map Generation from Object~
     - Map Builder.
     - Grid interaction
-    - Render Tile as a plane.
+    - ~Render Tile as a plane.~
+    - Add a depth field on the map object
+    - Render "floors"
 * Gameplay
     - Movement
     - Cover
