@@ -36,8 +36,9 @@ public class InputController : MonoBehaviour
         {
           Debug.Log("Pressed left click.");
         }
+        // Handle mouse click by sending information to the gameController.
+        
       }
-
     }
   }
 }
